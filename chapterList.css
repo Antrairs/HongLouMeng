@@ -1,8 +1,8 @@
 .chapterList {
     position: relative;
     text-align: center;
-    min-height: 20rem;
-    font-size: 2rem;
+    min-height: 6rem;
+    font-size: 1rem;
     border-radius: 10px;
     box-shadow: 2px 3px 3px rgb(139, 138, 138);
     transition: all 0.3s;
@@ -14,10 +14,10 @@
 }
 
 .c-item {
-    padding: 5rem 5rem 5rem 5rem;
+    padding: 2rem 2rem;
 
 }
 
 .separate {
-    height: 3rem;
+    height: 1rem;
 }
