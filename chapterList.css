@@ -2,7 +2,7 @@
     position: relative;
     text-align: center;
     min-height: 6rem;
-    font-size: 1rem;
+    font-size: 0.5rem;
     border-radius: 10px;
     box-shadow: 2px 3px 3px rgb(139, 138, 138);
     transition: all 0.3s;
@@ -14,7 +14,8 @@
 }
 
 .c-item {
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
 
 }
 
