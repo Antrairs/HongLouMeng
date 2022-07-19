@@ -1,0 +1,23 @@
+.chapterList {
+    position: relative;
+    text-align: center;
+    min-height: 20rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px rgb(139, 138, 138);
+    transition: all 0.3s;
+
+}
+
+.chapterList:hover {
+    box-shadow: 2px 3px 10px rgb(36, 35, 35);
+}
+
+.c-item {
+    padding: 5rem 5rem 5rem 5rem;
+
+}
+
+.separate {
+    height: 3rem;
+}
