@@ -39,13 +39,7 @@ html {
     color: rgb(255,251,240);
 }
 
-@font-face {
-    font-family: FZLTKS;
-    src: url("font/FZLTKSJW.TTF");
-}
-
 #title-box {
-    font-family: FZLTKS,serif;
     font-weight: 500;
     margin: 4rem 5rem;
     padding: 3rem 2rem;
@@ -78,7 +72,6 @@ html {
 
 .c-item {
     padding: 1rem 1rem;
-    font-family: FZLTKS, serif;
 }
 
 .separate {
