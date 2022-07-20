@@ -4,6 +4,7 @@
 }
 html {
     font-size: 16px;
+    background-image: linear-gradient(to right bottom, #F4606C, #E6CEAC, #BEEDC7, #A0EEE1, #74DAEA, #e3a4d8);
 }
 #chapter {
     margin-top: 3rem;
@@ -17,7 +18,8 @@ html {
     position: relative;
     width: 100%;
     height: 16rem;
-    background: rgb(1, 140, 194) linear-gradient(to bottom right, #f6dde4, #e7f398) no-repeat center center;
+    line-height: 2rem;
+    /*background: rgb(1, 140, 194) linear-gradient(to bottom right, #f6dde4, #e7f398) no-repeat center center;*/
 }
 
 #info {
@@ -54,6 +56,25 @@ html {
 
 }
 
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#title-box::after{
+    content: '|';
+    color:darkgray;
+
+    animation: blink 1s infinite;
+}
+
 .chapterList {
     position: relative;
     text-align: center;
@@ -76,4 +97,24 @@ html {
 
 .separate {
     height: 1rem;
+}
+
+.item11 {
+    background-image: linear-gradient(to bottom right, #F4606C, #E6CEAC);
+}
+
+.item12 {
+    background-image: linear-gradient(to bottom right, #E6CEAC, #BEEDC7);
+}
+
+.item13 {
+    background-image: linear-gradient(to bottom right, #BEEDC7, #A0EEE1);
+}
+
+.item14 {
+    background-image: linear-gradient(to bottom right, #A0EEE1, #74DAEA);
+}
+
+.item15 {
+    background-image: linear-gradient(to bottom, #74DAEA, #e3a4d8);
 }
