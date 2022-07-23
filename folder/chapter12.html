@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chapter12</title>
+</head>
+<style>
+    .key-word {
+        position: relative;
+        border-bottom: 1px dotted black;
+    }
+    .key-word:before {
+        content: attr(data);
+        position: absolute;
+        width: 250px;
+        background-color: #efba93;
+        color: #fff;
+        text-align: center;
+        padding: 15px;
+        line-height: 1.1;
+        border-radius: 5px;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity .5s;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        font-size: 0.70em;
+        visibility: hidden;
+    }
+    .key-word:after {
+        content: "";
+        position: absolute;
+        bottom: 75%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        opacity: 0;
+        transition: opacity .5s;
+        border-color: #000 transparent transparent transparent;
+        visibility: hidden;
+    }
+    .key-word:hover:before,
+    .key-word:hover:after {
+        opacity: 1;
+        visibility: visible;
+    }
+</style>
+<body>
+<div id="paragraph">
+    <p>
+        1221842387432782紥挣723423紥挣8575783顽意
+    </p>
+</div>
+
+</body>
+<script>
+    const data = {
+        '紥挣': '扎挣 意思是勉强支撑',
+        '顽意': '顽意，指玩具，指曲艺、杂技等娱乐活动。',
+    }
+    const para = document.querySelectorAll('#paragraph > p')
+    for (let p of para) {
+        for (let d in data) {
+            let text = p.innerHTML
+
+            p.innerHTML = text.replace(d, `<span class="key-word" data="${data[d]}">${d}</span>`)
+        }
+    }
+
+</script>
+</html>
