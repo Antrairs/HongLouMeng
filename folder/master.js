@@ -1,4 +1,6 @@
 
+
+
 const para = document.querySelectorAll('#paragraph > p')
 
 for (let d of data) {

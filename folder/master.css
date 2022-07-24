@@ -4,18 +4,19 @@
 }
 
 body {
-    padding: 2em calc(50% - 450px + 2em);
+    padding: 2rem calc(50% - 450px + 2rem);
+    /*padding: 2rem 1rem;*/
     font-size: 1rem;
     line-height: 1.6;
     color: #333;
-    /*overflow: scroll;*/
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 960px){
     body {
-        padding: 2em calc(80% - 450px + 2em);
+        padding: 2rem 1rem;
     }
 }
+
 
 .key-word {
     position: relative;
