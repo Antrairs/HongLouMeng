@@ -19,7 +19,6 @@ html {
     position: relative;
     width: 100%;
     height: 16rem;
-    /*line-height: 2rem;*/
 }
 
 #info {
@@ -94,26 +93,9 @@ html {
     height: 1rem;
 }
 
-.chart {
-
+#prompt {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    color: #F4606C;
 }
-
-/*.item11 {*/
-/*    background-image: linear-gradient(to bottom right, #F4606C, #E6CEAC);*/
-/*}*/
-
-/*.item12 {*/
-/*    background-image: linear-gradient(to bottom right, #E6CEAC, #BEEDC7);*/
-/*}*/
-
-/*.item13 {*/
-/*    background-image: linear-gradient(to bottom right, #BEEDC7, #A0EEE1);*/
-/*}*/
-
-/*.item14 {*/
-/*    background-image: linear-gradient(to bottom right, #A0EEE1, #74DAEA);*/
-/*}*/
-
-/*.item15 {*/
-/*    background-image: linear-gradient(to bottom right, #74DAEA, #e3a4d8);*/
-/*}*/
